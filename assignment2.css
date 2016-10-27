@@ -106,7 +106,7 @@ main {
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 5%; /* needed for the footer */
+	margin-bottom: 3%; /* needed for the footer */
 	margin-top: 3%;
 	max-width: 1024px;
 	padding-top:20px;
@@ -139,9 +139,7 @@ article[id="home"] h2 {
 	margin-top: 0px;
 }
 
-aside[id="brief"] {
 
-}
 /******/
 
 
@@ -436,31 +434,47 @@ aside[id="about_us_article"] img {
 }
 /****end about us page****/
 /****contact us page****/
+article[id="contact_us"]{
+	padding-bottom:5px;
+}
+
+article[id="contact_us"] h2 {
+	border-bottom: solid;
+	border-width: 2px;
+	border-bottom-color: #FFD440;
+	text-align:left;
+	margin-top: 0px;
+}
+/**form**/
 article[id="form"] {
 	display:flex; 
-	width:50%;
+	flex-direction: row;
+	justify-content:center;
 }
 
 aside[id="form"] {
 	display:flex; 
-	flex-direction: row;
+	flex-direction: column;
+	justify-content:flex-start;
 	align-items: center;
 	padding:2px;
-	padding-top:0px;
-	padding-bottom:0px;
-	width:100%;
-	float:left;
+	width:50%;
 }
+
+aside[id="form"] input, textarea {
+	width:100%;
+	padding:5px;
+	margin:5px;
+	resize: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box
+}
+
 
 aside[id="form"] textarea:focus,  input:focus {
     border: 2px solid #2900FF;
-    border-radius: 4px;
 }
 
-aside[id="form"] input.submit-button {
-	width: 100px;
-	float: right;
-}
 
 /****end contact us page****/
 
