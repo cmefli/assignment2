@@ -32,7 +32,6 @@ nav[role="banner"] {
 	border-bottom-style: solid;
 	border-bottom-width: 2px;
 	border-bottom-color: #2900FF;
-
 }
 
 .logo_and_search {
@@ -140,7 +139,8 @@ article[id="home"] img {
 	height:auto;
 	float:left;
 	padding-left:0px;
-	margin-right:5px;
+	margin-right:0px;
+	margin-bottom:10px;
 
 }
 
