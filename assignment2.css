@@ -23,7 +23,6 @@ body {
 	border-style: none;
 }
 
-
 nav[role="banner"] {
 	text-align:center;
 	padding-top: 15px;
@@ -45,8 +44,8 @@ nav[role="banner"] {
 }
 
 form {
-	text-align:right;
-	font-size: 0; /*remove white space between input field and button*/
+	text-align:center;
+	/*font-size: 0; remove white space between input field and button*/
 	
 }
 input[type=search] {
@@ -66,7 +65,7 @@ nav[role="banner"] ul {
 	justify-content: flex-end;
 	list-style-type: none;
 	-webkit-padding-start: 0px;
-	width: 100%;
+	width: 95%;
 	margin: 0px;
 	padding-right:5%;
 
@@ -83,7 +82,6 @@ nav[role="banner"] li a {
 	-webkit-transition:.5s;
 	transition:.5s;
 	padding-left:50px;
-
 }
 
 nav[role="banner"] li a:hover {
@@ -114,9 +112,14 @@ main {
 	padding-top:20px;
 }
 
+a:link, a:visited {
+	text-decoration:none;
+	color:inherit;
+}
+
 /*formatting for banner image and side text*/
 article[id="home"]{
-	padding-bottom:0px;
+	padding-bottom:5px;
 	overflow: auto;
 }
 
@@ -125,6 +128,7 @@ article[id="home"] img {
 	height:auto;
 	float:left;
 	padding-left:0px;
+	margin-right:5px;
 }
 
 article[id="home"] h2 {
@@ -244,13 +248,12 @@ article img[alt="Anna Pavlova"] {
 	margin-bottom:10px;
 }
 
-article img {
-	padding: 4px;
-	padding-left: 0px;
-}
 
+
+/****main page articles****/
 article[id="news"] {
-	width:100%;
+	display:flex; 
+	flex-direction: row;
 	overflow: auto;
 }
 
@@ -266,7 +269,6 @@ article[id="news"] h2 {
 aside[id="news_article"] {
 	display:flex; 
 	flex-direction: column;
-
 	align-items: center;
 	justify-content: left;
 	padding:2px;
@@ -278,11 +280,189 @@ aside[id="news_article"] {
 
 aside[id="news_article"] img {
 	/*margin-top:5px;*/
-	margin-bottom:5px;
-	display: block;
+	margin:5px;
 	width: 100%;
-	height: 100%;
+	height: auto;
 }
+/****end main page articles****/
+
+
+/****articles page****/
+article[id="articles"] {
+	display:flex; 
+	flex-direction: column;
+	overflow: auto;
+}
+
+article[id="articles"] h2 {
+	border-bottom: solid;
+	border-width: 2px;
+	border-bottom-color: #FFD440;
+	text-align:left;
+	margin-top: 0px;
+	width:100%;
+}
+
+aside[id="articles"] {
+	display:flex; 
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: left;
+	padding:2px;
+	padding-top:0px;
+	padding-bottom:0px;
+	width:100%;
+	float:left;
+	text-align:left;
+}
+
+aside[id="articles"] img {
+	/*margin-top:5px;*/
+	margin-right:10px;
+	margin-bottom:5px;
+	width: 25%;
+	height: auto;
+}
+/****end articles page****/
+
+/****individual articles****/
+article[id="article_page"] {
+	display:flex; 
+	flex-direction: column;
+}
+
+article[id="article_page"] h2 {
+	border-bottom: solid;
+	border-width: 2px;
+	border-bottom-color: #FFD440;
+	text-align:left;
+	margin-top: 0px;
+	width:100%;
+}
+
+aside[id="article_page"] {
+	display:flex; 
+	flex-direction: column;
+	align-items: center;
+	justify-content: left;
+	padding:2px;
+	padding-top:0px;
+	padding-bottom:0px;
+	width:100%;
+	float:left;
+	text-align:left;
+}
+
+aside[id="article_page"] img {
+	/*margin-top:5px;*/
+	margin-bottom:5px;
+	width: 50%;
+	height: auto;
+}
+
+/****end individual articles****/
+/****members page****/
+article[id="members"] {
+	display:flex; 
+	flex-direction: column;
+
+}
+
+article[id="members"] h2 {
+	border-bottom: solid;
+	border-width: 2px;
+	border-bottom-color: #FFD440;
+	text-align:left;
+	margin-top: 0px;
+	width:100%;
+}
+
+aside[id="members"] {
+	display:flex; 
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: left;
+	padding:2px;
+	padding-top:0px;
+	padding-bottom:0px;
+	width:100%;
+	text-align:center;
+}
+
+aside[id="members"] img {
+	/*margin-top:5px;*/
+	margin-right:10px;
+	margin-bottom:5px;
+	width: 50%;
+	height: auto;
+}
+
+/****end members page****/
+/****about us page****/
+article[id="about_us"] {
+	display:flex; 
+	flex-direction: column;
+	overflow: auto;
+}
+
+article[id="about_us"] h2 {
+	border-bottom: solid;
+	border-width: 2px;
+	border-bottom-color: #FFD440;
+	text-align:left;
+	margin-top: 0px;
+	width:100%;
+}
+
+aside[id="about_us_article"] {
+	display:flex; 
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: left;
+	padding:2px;
+	padding-top:0px;
+	padding-bottom:0px;
+	width:100%;
+	float:left;
+	text-align:left;
+}
+
+aside[id="about_us_article"] img {
+	/*margin-top:5px;*/
+	margin-right:10px;
+	margin-bottom:5px;
+	width: 50%;
+	height: auto;
+}
+/****end about us page****/
+/****contact us page****/
+article[id="form"] {
+	display:flex; 
+	width:50%;
+}
+
+aside[id="form"] {
+	display:flex; 
+	flex-direction: row;
+	align-items: center;
+	padding:2px;
+	padding-top:0px;
+	padding-bottom:0px;
+	width:100%;
+	float:left;
+}
+
+aside[id="form"] textarea:focus,  input:focus {
+    border: 2px solid #2900FF;
+    border-radius: 4px;
+}
+
+aside[id="form"] input.submit-button {
+	width: 100px;
+	float: right;
+}
+
+/****end contact us page****/
 
 
 aside[id="comments"] {
@@ -363,4 +543,3 @@ footer ul {
 	margin-right: 5%;
 
 }
-\ No newline at end of file
